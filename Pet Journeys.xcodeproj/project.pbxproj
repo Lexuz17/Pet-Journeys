@@ -7,15 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD0848E82BFA4F49006C7F49 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0848E72BFA4F49006C7F49 /* LocationService.swift */; };
+		CD4D2A462BFB2B7900EE31D1 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D2A452BFB2B7900EE31D1 /* Pet.swift */; };
+		CD4D2A492BFB84C900EE31D1 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D2A482BFB84C900EE31D1 /* LocationData.swift */; };
+		CD4D2A4F2BFB8E5C00EE31D1 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D2A4E2BFB8E5C00EE31D1 /* TestView.swift */; };
+		CD4D2A512BFB8F5000EE31D1 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D2A502BFB8F5000EE31D1 /* LocationModel.swift */; };
+		CD4D2A552BFBAFDD00EE31D1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D2A542BFBAFDD00EE31D1 /* LocationManager.swift */; };
+		CD4D2A732BFC915100EE31D1 /* RestoAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D2A722BFC915100EE31D1 /* RestoAnnotation.swift */; };
+		CD4D2A752BFDB93200EE31D1 /* ShopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D2A742BFDB93200EE31D1 /* ShopAnnotation.swift */; };
+		CD4D2A772BFDBB5900EE31D1 /* HospitalAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D2A762BFDBB5900EE31D1 /* HospitalAnnotation.swift */; };
 		CDC3DDAB2BF4F20D008459EF /* Pet_JourneysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3DDAA2BF4F20D008459EF /* Pet_JourneysApp.swift */; };
 		CDC3DDAD2BF4F20D008459EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3DDAC2BF4F20D008459EF /* ContentView.swift */; };
 		CDC3DDAF2BF4F210008459EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC3DDAE2BF4F210008459EF /* Assets.xcassets */; };
 		CDC3DDB22BF4F210008459EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC3DDB12BF4F210008459EF /* Preview Assets.xcassets */; };
 		CDC3DDB42BF4F210008459EF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3DDB32BF4F210008459EF /* Persistence.swift */; };
 		CDC3DDB72BF4F210008459EF /* Pet_Journeys.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDC3DDB52BF4F210008459EF /* Pet_Journeys.xcdatamodeld */; };
+		CDC3DDC12BF50405008459EF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3DDC02BF50405008459EF /* ContentViewModel.swift */; };
+		CDC3DDE82BF73D9E008459EF /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3DDE72BF73D9E008459EF /* CustomMapView.swift */; };
+		CDEE0DB62BFA1150004F579B /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = CDEE0DB52BFA1150004F579B /* GoogleMaps */; };
+		CDEE0DB82BFA1150004F579B /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = CDEE0DB72BFA1150004F579B /* GoogleMapsBase */; };
+		CDEE0DBA2BFA1150004F579B /* GoogleMapsCore in Frameworks */ = {isa = PBXBuildFile; productRef = CDEE0DB92BFA1150004F579B /* GoogleMapsCore */; };
+		CDEE0DBC2BFA1150004F579B /* GoogleMapsM4B in Frameworks */ = {isa = PBXBuildFile; productRef = CDEE0DBB2BFA1150004F579B /* GoogleMapsM4B */; };
+		CDEE0DBE2BFA11AC004F579B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEE0DBD2BFA11AC004F579B /* AppDelegate.swift */; };
+		CDEE0DC12BFA121B004F579B /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = CDEE0DC02BFA121B004F579B /* GooglePlaces */; };
+		CDF56A6E2C00AE4600432D9B /* Cute_Fox.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CDF56A6D2C00AE4600432D9B /* Cute_Fox.usdz */; };
+		CDF56A702C00AE5000432D9B /* Cute_Fox.scn in Resources */ = {isa = PBXBuildFile; fileRef = CDF56A6F2C00AE5000432D9B /* Cute_Fox.scn */; };
+		CDF56A722C00AE8900432D9B /* Toothless_Chimuelo_cute.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CDF56A712C00AE8900432D9B /* Toothless_Chimuelo_cute.usdz */; };
+		CDF56A742C00AE9600432D9B /* Toothless.scn in Resources */ = {isa = PBXBuildFile; fileRef = CDF56A732C00AE9600432D9B /* Toothless.scn */; };
+		CDF56A782C00AF2200432D9B /* AnimalSceneKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF56A772C00AF2200432D9B /* AnimalSceneKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD0848E72BFA4F49006C7F49 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		CD4D2A452BFB2B7900EE31D1 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		CD4D2A482BFB84C900EE31D1 /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		CD4D2A4E2BFB8E5C00EE31D1 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		CD4D2A502BFB8F5000EE31D1 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		CD4D2A542BFBAFDD00EE31D1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		CD4D2A722BFC915100EE31D1 /* RestoAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoAnnotation.swift; sourceTree = "<group>"; };
+		CD4D2A742BFDB93200EE31D1 /* ShopAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopAnnotation.swift; sourceTree = "<group>"; };
+		CD4D2A762BFDBB5900EE31D1 /* HospitalAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalAnnotation.swift; sourceTree = "<group>"; };
 		CDC3DDA72BF4F20D008459EF /* Pet Journeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Journeys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC3DDAA2BF4F20D008459EF /* Pet_JourneysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet_JourneysApp.swift; sourceTree = "<group>"; };
 		CDC3DDAC2BF4F20D008459EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +54,15 @@
 		CDC3DDB12BF4F210008459EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CDC3DDB32BF4F210008459EF /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		CDC3DDB62BF4F210008459EF /* Pet_Journeys.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pet_Journeys.xcdatamodel; sourceTree = "<group>"; };
+		CDC3DDC02BF50405008459EF /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		CDC3DDE72BF73D9E008459EF /* CustomMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
+		CDEE0DBD2BFA11AC004F579B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDF56A6A2C004ECE00432D9B /* Pet-Journeys-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Pet-Journeys-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CDF56A6D2C00AE4600432D9B /* Cute_Fox.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Cute_Fox.usdz; sourceTree = "<group>"; };
+		CDF56A6F2C00AE5000432D9B /* Cute_Fox.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Cute_Fox.scn; sourceTree = "<group>"; };
+		CDF56A712C00AE8900432D9B /* Toothless_Chimuelo_cute.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Toothless_Chimuelo_cute.usdz; sourceTree = "<group>"; };
+		CDF56A732C00AE9600432D9B /* Toothless.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Toothless.scn; sourceTree = "<group>"; };
+		CDF56A772C00AF2200432D9B /* AnimalSceneKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSceneKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,12 +70,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDEE0DB62BFA1150004F579B /* GoogleMaps in Frameworks */,
+				CDEE0DBA2BFA1150004F579B /* GoogleMapsCore in Frameworks */,
+				CDEE0DBC2BFA1150004F579B /* GoogleMapsM4B in Frameworks */,
+				CDEE0DC12BFA121B004F579B /* GooglePlaces in Frameworks */,
+				CDEE0DB82BFA1150004F579B /* GoogleMapsBase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD4D2A472BFB848000EE31D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD4D2A452BFB2B7900EE31D1 /* Pet.swift */,
+				CD4D2A482BFB84C900EE31D1 /* LocationData.swift */,
+				CD4D2A502BFB8F5000EE31D1 /* LocationModel.swift */,
+				CD4D2A542BFBAFDD00EE31D1 /* LocationManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CDC3DD9E2BF4F20D008459EF = {
 			isa = PBXGroup;
 			children = (
@@ -55,12 +111,20 @@
 		CDC3DDA92BF4F20D008459EF /* Pet Journeys */ = {
 			isa = PBXGroup;
 			children = (
+				CDF56A6D2C00AE4600432D9B /* Cute_Fox.usdz */,
+				CDF56A712C00AE8900432D9B /* Toothless_Chimuelo_cute.usdz */,
+				CDF56A732C00AE9600432D9B /* Toothless.scn */,
+				CDF56A6F2C00AE5000432D9B /* Cute_Fox.scn */,
+				CDF56A6A2C004ECE00432D9B /* Pet-Journeys-Info.plist */,
+				CD4D2A472BFB848000EE31D1 /* Model */,
 				CDC3DDAA2BF4F20D008459EF /* Pet_JourneysApp.swift */,
-				CDC3DDAC2BF4F20D008459EF /* ContentView.swift */,
+				CDC3DDBF2BF503C8008459EF /* ViewModels */,
+				CDC3DDBE2BF4FCA7008459EF /* Views */,
+				CDC3DDBD2BF4FC9F008459EF /* CoreData */,
 				CDC3DDAE2BF4F210008459EF /* Assets.xcassets */,
-				CDC3DDB32BF4F210008459EF /* Persistence.swift */,
-				CDC3DDB52BF4F210008459EF /* Pet_Journeys.xcdatamodeld */,
 				CDC3DDB02BF4F210008459EF /* Preview Content */,
+				CDEE0DBD2BFA11AC004F579B /* AppDelegate.swift */,
+				CD0848E72BFA4F49006C7F49 /* LocationService.swift */,
 			);
 			path = "Pet Journeys";
 			sourceTree = "<group>";
@@ -71,6 +135,37 @@
 				CDC3DDB12BF4F210008459EF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CDC3DDBD2BF4FC9F008459EF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CDC3DDB52BF4F210008459EF /* Pet_Journeys.xcdatamodeld */,
+				CDC3DDB32BF4F210008459EF /* Persistence.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CDC3DDBE2BF4FCA7008459EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDC3DDAC2BF4F20D008459EF /* ContentView.swift */,
+				CDC3DDE72BF73D9E008459EF /* CustomMapView.swift */,
+				CD4D2A4E2BFB8E5C00EE31D1 /* TestView.swift */,
+				CD4D2A722BFC915100EE31D1 /* RestoAnnotation.swift */,
+				CD4D2A742BFDB93200EE31D1 /* ShopAnnotation.swift */,
+				CD4D2A762BFDBB5900EE31D1 /* HospitalAnnotation.swift */,
+				CDF56A772C00AF2200432D9B /* AnimalSceneKit.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDC3DDBF2BF503C8008459EF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CDC3DDC02BF50405008459EF /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +184,13 @@
 			dependencies = (
 			);
 			name = "Pet Journeys";
+			packageProductDependencies = (
+				CDEE0DB52BFA1150004F579B /* GoogleMaps */,
+				CDEE0DB72BFA1150004F579B /* GoogleMapsBase */,
+				CDEE0DB92BFA1150004F579B /* GoogleMapsCore */,
+				CDEE0DBB2BFA1150004F579B /* GoogleMapsM4B */,
+				CDEE0DC02BFA121B004F579B /* GooglePlaces */,
+			);
 			productName = "Pet Journeys";
 			productReference = CDC3DDA72BF4F20D008459EF /* Pet Journeys.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +219,10 @@
 				Base,
 			);
 			mainGroup = CDC3DD9E2BF4F20D008459EF;
+			packageReferences = (
+				CDEE0DB42BFA1150004F579B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+				CDEE0DBF2BFA121B004F579B /* XCRemoteSwiftPackageReference "ios-places-sdk" */,
+			);
 			productRefGroup = CDC3DDA82BF4F20D008459EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,7 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC3DDB22BF4F210008459EF /* Preview Assets.xcassets in Resources */,
+				CDF56A6E2C00AE4600432D9B /* Cute_Fox.usdz in Resources */,
+				CDF56A722C00AE8900432D9B /* Toothless_Chimuelo_cute.usdz in Resources */,
 				CDC3DDAF2BF4F210008459EF /* Assets.xcassets in Resources */,
+				CDF56A702C00AE5000432D9B /* Cute_Fox.scn in Resources */,
+				CDF56A742C00AE9600432D9B /* Toothless.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,10 +253,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC3DDE82BF73D9E008459EF /* CustomMapView.swift in Sources */,
 				CDC3DDB72BF4F210008459EF /* Pet_Journeys.xcdatamodeld in Sources */,
+				CD4D2A772BFDBB5900EE31D1 /* HospitalAnnotation.swift in Sources */,
 				CDC3DDB42BF4F210008459EF /* Persistence.swift in Sources */,
 				CDC3DDAD2BF4F20D008459EF /* ContentView.swift in Sources */,
+				CD4D2A752BFDB93200EE31D1 /* ShopAnnotation.swift in Sources */,
+				CD4D2A492BFB84C900EE31D1 /* LocationData.swift in Sources */,
+				CD4D2A732BFC915100EE31D1 /* RestoAnnotation.swift in Sources */,
+				CD4D2A512BFB8F5000EE31D1 /* LocationModel.swift in Sources */,
+				CD4D2A462BFB2B7900EE31D1 /* Pet.swift in Sources */,
+				CDEE0DBE2BFA11AC004F579B /* AppDelegate.swift in Sources */,
 				CDC3DDAB2BF4F20D008459EF /* Pet_JourneysApp.swift in Sources */,
+				CDF56A782C00AF2200432D9B /* AnimalSceneKit.swift in Sources */,
+				CD0848E82BFA4F49006C7F49 /* LocationService.swift in Sources */,
+				CD4D2A4F2BFB8E5C00EE31D1 /* TestView.swift in Sources */,
+				CDC3DDC12BF50405008459EF /* ContentViewModel.swift in Sources */,
+				CD4D2A552BFBAFDD00EE31D1 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,11 +406,14 @@
 				DEVELOPMENT_TEAM = M73B4W9D68;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pet-Journeys-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to access your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,11 +438,14 @@
 				DEVELOPMENT_TEAM = M73B4W9D68;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pet-Journeys-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to access your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -352,6 +481,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CDEE0DB42BFA1150004F579B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.4.0;
+			};
+		};
+		CDEE0DBF2BFA121B004F579B /* XCRemoteSwiftPackageReference "ios-places-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-places-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CDEE0DB52BFA1150004F579B /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDEE0DB42BFA1150004F579B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+		CDEE0DB72BFA1150004F579B /* GoogleMapsBase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDEE0DB42BFA1150004F579B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMapsBase;
+		};
+		CDEE0DB92BFA1150004F579B /* GoogleMapsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDEE0DB42BFA1150004F579B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMapsCore;
+		};
+		CDEE0DBB2BFA1150004F579B /* GoogleMapsM4B */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDEE0DB42BFA1150004F579B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMapsM4B;
+		};
+		CDEE0DC02BFA121B004F579B /* GooglePlaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDEE0DBF2BFA121B004F579B /* XCRemoteSwiftPackageReference "ios-places-sdk" */;
+			productName = GooglePlaces;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CDC3DDB52BF4F210008459EF /* Pet_Journeys.xcdatamodeld */ = {
