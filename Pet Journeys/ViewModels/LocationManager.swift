@@ -15,6 +15,8 @@ enum LocationType: String {
     case bowlingAlley = "bowling_alley"
     case shoppingMall = "shopping_mall"
     case mood = "mood"
+    case home = "home"
+    case office = "office"
 }
 
 struct LocationManager {

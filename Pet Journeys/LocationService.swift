@@ -11,13 +11,17 @@ import CoreLocation
 class LocationService: NSObject, CLLocationManagerDelegate, ObservableObject {
     private var locationManager: CLLocationManager?
     @Published var userLocation: CLLocationCoordinate2D?
+    @Published var location: CLLocation?
+
     var onLocationUpdate: ((CLLocationCoordinate2D) -> Void)?
 
     override init() {
         super.init()
         checkIfLocationIsEnabled()
         if let initialLocation = locationManager?.location {
+            let location = CLLocation(latitude: initialLocation.coordinate.latitude, longitude: initialLocation.coordinate.longitude)
             self.userLocation = initialLocation.coordinate
+            self.location = location
             onLocationUpdate?(initialLocation.coordinate)
         }
         
@@ -63,6 +67,7 @@ class LocationService: NSObject, CLLocationManagerDelegate, ObservableObject {
         print("PIndah")
         guard let location = locations.last else { return }
         DispatchQueue.main.async {
+            self.location = location
             self.userLocation = location.coordinate
             self.onLocationUpdate?(location.coordinate)
         }
@@ -72,3 +77,9 @@ class LocationService: NSObject, CLLocationManagerDelegate, ObservableObject {
         print("Location manager failed with error: \(error)")
     }
 }
+
+extension CLLocationCoordinate2D {
+    static let ducklings = CLLocationCoordinate2D(latitude: 42.35550, longitude: -71.06979)
+}
+
+

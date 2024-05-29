@@ -16,6 +16,21 @@
 		CD4D2A732BFC915100EE31D1 /* RestoAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D2A722BFC915100EE31D1 /* RestoAnnotation.swift */; };
 		CD4D2A752BFDB93200EE31D1 /* ShopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D2A742BFDB93200EE31D1 /* ShopAnnotation.swift */; };
 		CD4D2A772BFDBB5900EE31D1 /* HospitalAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D2A762BFDBB5900EE31D1 /* HospitalAnnotation.swift */; };
+		CD6AF6A92C038432005EC8BC /* InputNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6AF6A82C038432005EC8BC /* InputNameView.swift */; };
+		CD6AF6AD2C03A0C1005EC8BC /* Boogaloo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD6AF6AC2C03A01E005EC8BC /* Boogaloo-Regular.ttf */; };
+		CD6AF6B22C03AAF4005EC8BC /* InputNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6AF6B12C03AAF4005EC8BC /* InputNameViewModel.swift */; };
+		CD6AF6B42C03B3D6005EC8BC /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6AF6B32C03B3D6005EC8BC /* IntroView.swift */; };
+		CD6AF6B82C03BBC1005EC8BC /* IntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6AF6B72C03BBC1005EC8BC /* IntroViewModel.swift */; };
+		CD6AF6BA2C03BD30005EC8BC /* LocationPickerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6AF6B92C03BD30005EC8BC /* LocationPickerHome.swift */; };
+		CD6AF6BC2C03BD43005EC8BC /* OfficePickerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6AF6BB2C03BD43005EC8BC /* OfficePickerHome.swift */; };
+		CD6AF6BF2C03C56C005EC8BC /* MapItemPicker in Frameworks */ = {isa = PBXBuildFile; productRef = CD6AF6BE2C03C56C005EC8BC /* MapItemPicker */; };
+		CD6AF6C12C042432005EC8BC /* MoodAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6AF6C02C042432005EC8BC /* MoodAnnotation.swift */; };
+		CD6AF6C22C05835C005EC8BC /* Pet-Journeys-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDF56A6A2C004ECE00432D9B /* Pet-Journeys-Info.plist */; };
+		CD6AF6C42C05964C005EC8BC /* MapPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6AF6C32C05964C005EC8BC /* MapPickerView.swift */; };
+		CD6AF6C62C0596C7005EC8BC /* MapPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6AF6C52C0596C7005EC8BC /* MapPickerViewModel.swift */; };
+		CD6AF6C82C05C70F005EC8BC /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6AF6C72C05C70F005EC8BC /* SheetView.swift */; };
+		CD6AF6CA2C05C8A7005EC8BC /* LocationSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6AF6C92C05C8A7005EC8BC /* LocationSearchService.swift */; };
+		CD6AF6CC2C061EEF005EC8BC /* HouseAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6AF6CB2C061EEF005EC8BC /* HouseAnnotation.swift */; };
 		CDC3DDAB2BF4F20D008459EF /* Pet_JourneysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3DDAA2BF4F20D008459EF /* Pet_JourneysApp.swift */; };
 		CDC3DDAD2BF4F20D008459EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3DDAC2BF4F20D008459EF /* ContentView.swift */; };
 		CDC3DDAF2BF4F210008459EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC3DDAE2BF4F210008459EF /* Assets.xcassets */; };
@@ -47,6 +62,19 @@
 		CD4D2A722BFC915100EE31D1 /* RestoAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoAnnotation.swift; sourceTree = "<group>"; };
 		CD4D2A742BFDB93200EE31D1 /* ShopAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopAnnotation.swift; sourceTree = "<group>"; };
 		CD4D2A762BFDBB5900EE31D1 /* HospitalAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalAnnotation.swift; sourceTree = "<group>"; };
+		CD6AF6A82C038432005EC8BC /* InputNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameView.swift; sourceTree = "<group>"; };
+		CD6AF6AC2C03A01E005EC8BC /* Boogaloo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Boogaloo-Regular.ttf"; sourceTree = "<group>"; };
+		CD6AF6B12C03AAF4005EC8BC /* InputNameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameViewModel.swift; sourceTree = "<group>"; };
+		CD6AF6B32C03B3D6005EC8BC /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		CD6AF6B72C03BBC1005EC8BC /* IntroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewModel.swift; sourceTree = "<group>"; };
+		CD6AF6B92C03BD30005EC8BC /* LocationPickerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerHome.swift; sourceTree = "<group>"; };
+		CD6AF6BB2C03BD43005EC8BC /* OfficePickerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficePickerHome.swift; sourceTree = "<group>"; };
+		CD6AF6C02C042432005EC8BC /* MoodAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodAnnotation.swift; sourceTree = "<group>"; };
+		CD6AF6C32C05964C005EC8BC /* MapPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPickerView.swift; sourceTree = "<group>"; };
+		CD6AF6C52C0596C7005EC8BC /* MapPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPickerViewModel.swift; sourceTree = "<group>"; };
+		CD6AF6C72C05C70F005EC8BC /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		CD6AF6C92C05C8A7005EC8BC /* LocationSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchService.swift; sourceTree = "<group>"; };
+		CD6AF6CB2C061EEF005EC8BC /* HouseAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseAnnotation.swift; sourceTree = "<group>"; };
 		CDC3DDA72BF4F20D008459EF /* Pet Journeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Journeys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC3DDAA2BF4F20D008459EF /* Pet_JourneysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet_JourneysApp.swift; sourceTree = "<group>"; };
 		CDC3DDAC2BF4F20D008459EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +100,7 @@
 			files = (
 				CDEE0DB62BFA1150004F579B /* GoogleMaps in Frameworks */,
 				CDEE0DBA2BFA1150004F579B /* GoogleMapsCore in Frameworks */,
+				CD6AF6BF2C03C56C005EC8BC /* MapItemPicker in Frameworks */,
 				CDEE0DBC2BFA1150004F579B /* GoogleMapsM4B in Frameworks */,
 				CDEE0DC12BFA121B004F579B /* GooglePlaces in Frameworks */,
 				CDEE0DB82BFA1150004F579B /* GoogleMapsBase in Frameworks */,
@@ -87,9 +116,20 @@
 				CD4D2A452BFB2B7900EE31D1 /* Pet.swift */,
 				CD4D2A482BFB84C900EE31D1 /* LocationData.swift */,
 				CD4D2A502BFB8F5000EE31D1 /* LocationModel.swift */,
-				CD4D2A542BFBAFDD00EE31D1 /* LocationManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CD6AF6AE2C03A710005EC8BC /* AnnotationView */ = {
+			isa = PBXGroup;
+			children = (
+				CD6AF6C02C042432005EC8BC /* MoodAnnotation.swift */,
+				CD4D2A722BFC915100EE31D1 /* RestoAnnotation.swift */,
+				CD4D2A742BFDB93200EE31D1 /* ShopAnnotation.swift */,
+				CD4D2A762BFDBB5900EE31D1 /* HospitalAnnotation.swift */,
+				CD6AF6CB2C061EEF005EC8BC /* HouseAnnotation.swift */,
+			);
+			path = AnnotationView;
 			sourceTree = "<group>";
 		};
 		CDC3DD9E2BF4F20D008459EF = {
@@ -111,20 +151,22 @@
 		CDC3DDA92BF4F20D008459EF /* Pet Journeys */ = {
 			isa = PBXGroup;
 			children = (
+				CD6AF6AC2C03A01E005EC8BC /* Boogaloo-Regular.ttf */,
 				CDF56A6D2C00AE4600432D9B /* Cute_Fox.usdz */,
 				CDF56A712C00AE8900432D9B /* Toothless_Chimuelo_cute.usdz */,
 				CDF56A732C00AE9600432D9B /* Toothless.scn */,
 				CDF56A6F2C00AE5000432D9B /* Cute_Fox.scn */,
 				CDF56A6A2C004ECE00432D9B /* Pet-Journeys-Info.plist */,
 				CD4D2A472BFB848000EE31D1 /* Model */,
-				CDC3DDAA2BF4F20D008459EF /* Pet_JourneysApp.swift */,
 				CDC3DDBF2BF503C8008459EF /* ViewModels */,
 				CDC3DDBE2BF4FCA7008459EF /* Views */,
 				CDC3DDBD2BF4FC9F008459EF /* CoreData */,
 				CDC3DDAE2BF4F210008459EF /* Assets.xcassets */,
 				CDC3DDB02BF4F210008459EF /* Preview Content */,
 				CDEE0DBD2BFA11AC004F579B /* AppDelegate.swift */,
+				CDC3DDAA2BF4F20D008459EF /* Pet_JourneysApp.swift */,
 				CD0848E72BFA4F49006C7F49 /* LocationService.swift */,
+				CD6AF6C92C05C8A7005EC8BC /* LocationSearchService.swift */,
 			);
 			path = "Pet Journeys";
 			sourceTree = "<group>";
@@ -149,13 +191,17 @@
 		CDC3DDBE2BF4FCA7008459EF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CD6AF6AE2C03A710005EC8BC /* AnnotationView */,
 				CDC3DDAC2BF4F20D008459EF /* ContentView.swift */,
 				CDC3DDE72BF73D9E008459EF /* CustomMapView.swift */,
 				CD4D2A4E2BFB8E5C00EE31D1 /* TestView.swift */,
-				CD4D2A722BFC915100EE31D1 /* RestoAnnotation.swift */,
-				CD4D2A742BFDB93200EE31D1 /* ShopAnnotation.swift */,
-				CD4D2A762BFDBB5900EE31D1 /* HospitalAnnotation.swift */,
 				CDF56A772C00AF2200432D9B /* AnimalSceneKit.swift */,
+				CD6AF6A82C038432005EC8BC /* InputNameView.swift */,
+				CD6AF6B32C03B3D6005EC8BC /* IntroView.swift */,
+				CD6AF6B92C03BD30005EC8BC /* LocationPickerHome.swift */,
+				CD6AF6BB2C03BD43005EC8BC /* OfficePickerHome.swift */,
+				CD6AF6C32C05964C005EC8BC /* MapPickerView.swift */,
+				CD6AF6C72C05C70F005EC8BC /* SheetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +210,10 @@
 			isa = PBXGroup;
 			children = (
 				CDC3DDC02BF50405008459EF /* ContentViewModel.swift */,
+				CD6AF6B12C03AAF4005EC8BC /* InputNameViewModel.swift */,
+				CD6AF6B72C03BBC1005EC8BC /* IntroViewModel.swift */,
+				CD4D2A542BFBAFDD00EE31D1 /* LocationManager.swift */,
+				CD6AF6C52C0596C7005EC8BC /* MapPickerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -190,6 +240,7 @@
 				CDEE0DB92BFA1150004F579B /* GoogleMapsCore */,
 				CDEE0DBB2BFA1150004F579B /* GoogleMapsM4B */,
 				CDEE0DC02BFA121B004F579B /* GooglePlaces */,
+				CD6AF6BE2C03C56C005EC8BC /* MapItemPicker */,
 			);
 			productName = "Pet Journeys";
 			productReference = CDC3DDA72BF4F20D008459EF /* Pet Journeys.app */;
@@ -222,6 +273,7 @@
 			packageReferences = (
 				CDEE0DB42BFA1150004F579B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
 				CDEE0DBF2BFA121B004F579B /* XCRemoteSwiftPackageReference "ios-places-sdk" */,
+				CD6AF6BD2C03C56C005EC8BC /* XCRemoteSwiftPackageReference "swiftui-map-item-picker" */,
 			);
 			productRefGroup = CDC3DDA82BF4F20D008459EF /* Products */;
 			projectDirPath = "";
@@ -241,8 +293,10 @@
 				CDF56A6E2C00AE4600432D9B /* Cute_Fox.usdz in Resources */,
 				CDF56A722C00AE8900432D9B /* Toothless_Chimuelo_cute.usdz in Resources */,
 				CDC3DDAF2BF4F210008459EF /* Assets.xcassets in Resources */,
+				CD6AF6AD2C03A0C1005EC8BC /* Boogaloo-Regular.ttf in Resources */,
 				CDF56A702C00AE5000432D9B /* Cute_Fox.scn in Resources */,
 				CDF56A742C00AE9600432D9B /* Toothless.scn in Resources */,
+				CD6AF6C22C05835C005EC8BC /* Pet-Journeys-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,21 +307,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6AF6B22C03AAF4005EC8BC /* InputNameViewModel.swift in Sources */,
+				CD6AF6C12C042432005EC8BC /* MoodAnnotation.swift in Sources */,
+				CD6AF6C42C05964C005EC8BC /* MapPickerView.swift in Sources */,
 				CDC3DDE82BF73D9E008459EF /* CustomMapView.swift in Sources */,
 				CDC3DDB72BF4F210008459EF /* Pet_Journeys.xcdatamodeld in Sources */,
 				CD4D2A772BFDBB5900EE31D1 /* HospitalAnnotation.swift in Sources */,
+				CD6AF6CC2C061EEF005EC8BC /* HouseAnnotation.swift in Sources */,
 				CDC3DDB42BF4F210008459EF /* Persistence.swift in Sources */,
 				CDC3DDAD2BF4F20D008459EF /* ContentView.swift in Sources */,
 				CD4D2A752BFDB93200EE31D1 /* ShopAnnotation.swift in Sources */,
 				CD4D2A492BFB84C900EE31D1 /* LocationData.swift in Sources */,
+				CD6AF6C82C05C70F005EC8BC /* SheetView.swift in Sources */,
 				CD4D2A732BFC915100EE31D1 /* RestoAnnotation.swift in Sources */,
+				CD6AF6C62C0596C7005EC8BC /* MapPickerViewModel.swift in Sources */,
 				CD4D2A512BFB8F5000EE31D1 /* LocationModel.swift in Sources */,
+				CD6AF6CA2C05C8A7005EC8BC /* LocationSearchService.swift in Sources */,
+				CD6AF6B82C03BBC1005EC8BC /* IntroViewModel.swift in Sources */,
 				CD4D2A462BFB2B7900EE31D1 /* Pet.swift in Sources */,
 				CDEE0DBE2BFA11AC004F579B /* AppDelegate.swift in Sources */,
 				CDC3DDAB2BF4F20D008459EF /* Pet_JourneysApp.swift in Sources */,
+				CD6AF6A92C038432005EC8BC /* InputNameView.swift in Sources */,
+				CD6AF6BA2C03BD30005EC8BC /* LocationPickerHome.swift in Sources */,
 				CDF56A782C00AF2200432D9B /* AnimalSceneKit.swift in Sources */,
 				CD0848E82BFA4F49006C7F49 /* LocationService.swift in Sources */,
 				CD4D2A4F2BFB8E5C00EE31D1 /* TestView.swift in Sources */,
+				CD6AF6BC2C03BD43005EC8BC /* OfficePickerHome.swift in Sources */,
+				CD6AF6B42C03B3D6005EC8BC /* IntroView.swift in Sources */,
 				CDC3DDC12BF50405008459EF /* ContentViewModel.swift in Sources */,
 				CD4D2A552BFBAFDD00EE31D1 /* LocationManager.swift in Sources */,
 			);
@@ -411,7 +477,6 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to access your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -443,7 +508,6 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to access your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -483,6 +547,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CD6AF6BD2C03C56C005EC8BC /* XCRemoteSwiftPackageReference "swiftui-map-item-picker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-map-item-picker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		CDEE0DB42BFA1150004F579B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
@@ -502,6 +574,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CD6AF6BE2C03C56C005EC8BC /* MapItemPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD6AF6BD2C03C56C005EC8BC /* XCRemoteSwiftPackageReference "swiftui-map-item-picker" */;
+			productName = MapItemPicker;
+		};
 		CDEE0DB52BFA1150004F579B /* GoogleMaps */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CDEE0DB42BFA1150004F579B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;

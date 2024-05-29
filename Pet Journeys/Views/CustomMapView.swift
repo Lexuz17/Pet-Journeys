@@ -14,6 +14,7 @@ import SceneKit
 struct CustomMapView: UIViewRepresentable {
     @Binding var mapRegion: MKCoordinateRegion
     @ObservedObject var viewModel: ContentViewModel
+    @EnvironmentObject var homeLocation: LocationModel
     
     func makeUIView(context: Context) -> MKMapView {
         let hour = Calendar.current.component(.hour, from: Date())
@@ -22,7 +23,7 @@ struct CustomMapView: UIViewRepresentable {
         mapView.setRegion(mapRegion, animated: false)
         mapView.delegate = context.coordinator
         mapView.isPitchEnabled = false
-        mapView.isScrollEnabled = false
+        mapView.isScrollEnabled = false 
         mapView.pointOfInterestFilter = .excludingAll
         mapView.mapType = .mutedStandard
         mapView.isZoomEnabled = false
@@ -76,6 +77,7 @@ struct CustomMapView: UIViewRepresentable {
         updateAnnotations(from: viewModel.clothingStoreLocations, to: mapView, type: LocationType.clothingStore.rawValue)
         updateAnnotations(from: viewModel.hospitalLocations, to: mapView, type: LocationType.hospital.rawValue)
         updateAnnotations(from: viewModel.moodLocations, to: mapView, type: LocationType.mood.rawValue)
+        updateAnnotations(from: [homeLocation], to: mapView, type: LocationType.home.rawValue)
     }
     
     private func updateAnnotations(from locations: [LocationModel]?, to mapView: MKMapView, type: String) {
@@ -113,10 +115,6 @@ struct CustomMapView: UIViewRepresentable {
         var currentPitch: CGFloat = 70.0
         var currentAltitude: CLLocationDistance = 800.0
         var userLocationAnnotation: UserLocationAnnotation?
-
-//        init(_ parent: CustomMapView) {
-//            self.parent = parent
-//        }
 
         init(_ parent: CustomMapView) {
             self.parent = parent
@@ -158,39 +156,6 @@ struct CustomMapView: UIViewRepresentable {
             mapView.setCamera(camera, animated: false)
             
         }
-        
-        // Custom user location annotation
-//        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//            
-//            guard annotation is UserLocationAnnotation else { return nil }
-//            
-//            let identifier = "UserLocationAnnotation"
-//            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-//            
-//            if annotationView == nil {
-//                annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-//                annotationView?.canShowCallout = false
-//                
-//                let rectangle = UIHostingController(rootView: Rectangle().frame(width: 20, height: 20).foregroundColor(.red).shadow(radius: 10))
-//                rectangle.view.backgroundColor = .clear
-//                rectangle.view.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-//                
-//                annotationView?.addSubview(rectangle.view)
-//            } else {
-//                annotationView?.annotation = annotation
-//            }
-//            
-//            return annotationView
-//        }
-
-//        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//            if annotation is UserLocationAnnotation {
-//                return createUserLocationAnnotationView(for: annotation, on: mapView)
-//            } else if annotation is LocationAnnotation {
-//                return createLocationAnnotationView(for: annotation, on: mapView)
-//            }
-//            return nil
-//        }
 
         func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
             if annotation is MKUserLocation { return nil }
@@ -241,6 +206,10 @@ struct CustomMapView: UIViewRepresentable {
                         hostingController = UIHostingController(rootView: AnyView(HospitalAnnotation()))
                     case LocationType.clothingStore.rawValue:
                         hostingController = UIHostingController(rootView: AnyView(ShopAnnotation()))
+                    case LocationType.mood.rawValue:
+                        hostingController = UIHostingController(rootView: AnyView(MoodAnnotation()))
+                    case LocationType.home.rawValue:
+                        hostingController = UIHostingController(rootView: AnyView(HouseAnnotation()))                        
                     default:
                         hostingController = UIHostingController(rootView: AnyView(EmptyView()))
                     }

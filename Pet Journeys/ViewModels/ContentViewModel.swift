@@ -192,8 +192,8 @@ class ContentViewModel: NSObject, ObservableObject {
     private func decreasePetHunger() {
         DispatchQueue.main.async {
             self.dogVM.decrementStat(.hunger)
-            if self.dogVM.dog.healthStat < 0 {
-                self.dogVM.dog.healthStat = 0
+            if self.dogVM.dog.foodStat < 0 {
+                self.dogVM.dog.foodStat = 0
             }
             
             print("Pet's hunger decreased to \(self.dogVM.dog.foodStat)")
@@ -221,6 +221,10 @@ class ContentViewModel: NSObject, ObservableObject {
                 case .restaurant:
                     self?.restaurantLocations = locations
                 case .mood:
+                    return
+                case .home:
+                    return
+                case .office:
                     return
                 }
             }

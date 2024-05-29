@@ -46,26 +46,7 @@ class Pet: ObservableObject{
 class DogVM: ObservableObject{
     @Published var dog: Pet = Pet(name: "Dog", image: "ss")
     @Published var isChange: Bool = true
-    
-//    public func incrementHealth(){
-//        self.dog.healthStat += 1
-//        isChange.toggle()
-//    }
-//    
-//    public func incrementHunger(){
-//        self.dog.foodStat += 1
-//        isChange.toggle()
-//    }
-//    
-//    public func incrementMood(){
-//        self.dog.moodStat += 1
-//        isChange.toggle()
-//    }
-//    
-//    public func incrementEnergy(){
-//        self.dog.energyStat += 1
-//        isChange.toggle()
-//    }
+   
     public func incrementStat(_ stat: DogStat) {
         switch stat {
         case .health:

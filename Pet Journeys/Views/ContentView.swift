@@ -63,7 +63,6 @@ struct ContentView: View {
                         Spacer()
                         
                         VStack(alignment: .trailing) {
-                            IconStackRectangle(imageName: "Location", size: CGSize(width: 100, height: 100), cornerRadius: 18)
                             Spacer()
                             if viewModel.isNearStore{
                                 IconStackCircle(imageName: "Store", size: CGSize(width: 285, height: 285))
@@ -80,6 +79,7 @@ struct ContentView: View {
 //            AnimalSceneKit()
 //                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
         }
+        .navigationBarBackButtonHidden(true)
         
 //        VStack {
 //            Button(action: {
@@ -136,23 +136,16 @@ struct MenuRectangle: View {
             BlurView(style: .systemMaterial)
                 .opacity(0.4)
             
-            Rectangle()
-                .fill(
-                    LinearGradient(
-                        gradient: Gradient(colors: [Color(hex: "98DCFE"), Color(hex: "5692B1")]),
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
-                )
-                .frame(height: 160)
-                .opacity(0.6)
-                .overlay(
-                    Rectangle()
-                        .fill(Color(hex: "001D56"))
-                        .frame(height: 5)
-                        .opacity(0.4),
-                    alignment: .bottom
-                )
+//            Rectangle()
+//                .fill(
+//                    LinearGradient(
+//                        gradient: Gradient(colors: [Color(hex: "98DCFE"), Color(hex: "5692B1")]),
+//                        startPoint: .top,
+//                        endPoint: .bottom
+//                    )
+
+//                )
+            Image("bgNav")
             
             HStack{
                 Image("Coin")
@@ -165,14 +158,16 @@ struct MenuRectangle: View {
                 HStack{
                     VStack{
                         ZStack(alignment: .center){
-                            Image("Burger-bg")
+                            Image("bgIconStat")
                                 .resizable()
                                 .frame(width: 110, height: 110)
                             
-                            Image("Burger-real")
+                            Image("greenStat")
                                 .resizable()
-                                .frame(width: 100, height: 100)
+                                .frame(width: 84, height: 84)
                                 .clipShape(Rectangle().offset(y: 100 - CGFloat(hungerStat)))
+                            
+                            Image("hungerIcon")
                         }
                         .shadow(radius: 8)
                         
@@ -184,44 +179,47 @@ struct MenuRectangle: View {
                     }
                     
                     ZStack(alignment: .center) {
-                        Image("Heart-bg")
+                        Image("bgIconStat")
                             .resizable()
                             .frame(width: 110, height: 110)
-                        Image("Heart-real")
+                        Image("greenStat")
                             .resizable()
-                            .frame(width: 100, height: 100)
+                            .frame(width: 84, height: 84)
                             .clipShape(Rectangle().offset(y: 100 - CGFloat(healthStat)))
+                        Image("healthIcon")
                     }
                     .shadow(radius: 8)
                     
                     ZStack(alignment: .center) {
-                        Image("Happy-bg")
+                        Image("bgIconStat")
                             .resizable()
                             .frame(width: 110, height: 110)
-                        Image("Happy-real")
+                        Image("greenStat")
                             .resizable()
-                            .frame(width: 100, height: 100)
+                            .frame(width: 84, height: 84)
                             .clipShape(Rectangle().offset(y: 100 - CGFloat(moodStat)))
+                        Image("moodIcon")
                     }
                     .shadow(radius: 8)
                     
                     ZStack(alignment: .center) {
-                        Image("Mood-bg")
+                        Image("bgIconStat")
                             .resizable()
                             .frame(width: 110, height: 110)
-                        Image("Moods-real")
+                        Image("greenStat")
                             .resizable()
-                            .frame(width: 100, height: 100)
+                            .frame(width: 84, height: 84)
                             .clipShape(Rectangle().offset(y: 100 - CGFloat(energyStat)))
+                        Image("sleepIcon")
                     }
                     .shadow(radius: 8)
                 }
                 
                 Spacer()
                 
-                Image("Animal")
+                Image("addAnimal")
                     .resizable()
-                    .frame(width: 100, height: 100)
+                    .frame(width: 90, height: 90)
                     .shadow(radius: 8)
             }
             .padding(.horizontal, 30)
