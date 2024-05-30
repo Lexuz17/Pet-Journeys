@@ -21,7 +21,9 @@ struct Pet_JourneysApp: App {
             
 //            IntroView(userName: .constant("Jason"), year: .constant(2003))
 //            TestView()
-            InputNameView()
+            
+//            InputNameView()
+            ChoosePetView()
                 .environmentObject(viewModel)
                 .environmentObject(homeLocation)
                 .environmentObject(officeLocation)

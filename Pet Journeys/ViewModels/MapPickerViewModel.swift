@@ -16,7 +16,10 @@ class MapPickerViewModel: ObservableObject {
     @Published var mapVisibleRegion: MKCoordinateRegion?
     @Published var selectedMapItem: MKMapItem? // track user selected map items
     @Published var selectedMapItemTag: Int? // track user selected map items
-    @Published var tappedCoordinate: CLLocationCoordinate2D?
+    @Published var homeTappedCoordinate: CLLocationCoordinate2D?
+    @Published var officeTappedCoordinate: CLLocationCoordinate2D?
+    @Published var schoolTappedCoordinate: CLLocationCoordinate2D?
+    @Published var TappedCoordinate: CLLocationCoordinate2D?
     @Published var queryResults: [MKMapItem] = [] // Store query results
     @Published var nearbyLocations: [MKMapItem] = [] // Store nearby locations
         
@@ -30,13 +33,31 @@ class MapPickerViewModel: ObservableObject {
         return CLLocationCoordinate2D(latitude: daLocation.latitude, longitude: daLocation.longitude)
     }
 
-    func findClosest(to coordinate: CLLocationCoordinate2D) {
-        self.tappedCoordinate = coordinate
+    func markCoordinate(to coordinate: CLLocationCoordinate2D, type: String) {
+        switch type {
+        case "home":
+            self.homeTappedCoordinate = coordinate
+        case "office":
+            self.officeTappedCoordinate = coordinate
+        case "school":
+            self.schoolTappedCoordinate = coordinate
+        default:
+            return
+        }
         mapCameraPosition = .camera(MapCamera(centerCoordinate: coordinate, distance: maxDistance, heading: 0, pitch: 0))
     }
     
-    func getTappedCoordinate() -> CLLocationCoordinate2D?{
-        return tappedCoordinate
+    func getTappedCoordinate(type: String) -> CLLocationCoordinate2D? {
+        switch type {
+        case "home":
+            return homeTappedCoordinate
+        case "office":
+            return officeTappedCoordinate
+        case "school":
+            return schoolTappedCoordinate
+        default:
+            return nil
+        }
     }
     
     func centerMapOnUserLocation() {

@@ -14,6 +14,7 @@ struct SheetView: View {
     @State private var searchService = LocationSearchService(completer: .init())
     @State private var search: String = ""
     @State private var isError = false
+    var locationType: String
     var onCoordinateSelect: ((CLLocationCoordinate2D) -> Void)?
     
     var body: some View {
@@ -32,7 +33,8 @@ struct SheetView: View {
                     Button(action: {
                         print(completion)
                         if let coordinate = completion.coordinate {
-                            viewModel.findClosest(to: coordinate)
+                            viewModel.markCoordinate(to: coordinate, type: locationType)
+                            onCoordinateSelect?(coordinate)
                             presentationMode.wrappedValue.dismiss()
                             isError = false
                         } else {

@@ -75,7 +75,7 @@ struct IntroView: View {
                         
                         if year <= 2003 {
                             Button(action: {
-                                // Action for Office button
+                                viewModel.navigateToSetOffice()
                             }) {
                                 Text("")
                                     .background(Image("OfficeButton"))
@@ -111,8 +111,16 @@ struct IntroView: View {
                     .disabled(!(homeDone && officeDone))
                     
                     NavigationLink(
-                        destination: LocationPickerHome(userName: $userName, year: $year, homeDone: $homeDone, officeDone: $officeDone),
+                        destination: locationPicker(userName: $userName, year: $year, homeDone: $homeDone, officeDone: $officeDone, isHomeLocation: true),
                         isActive: $viewModel.shouldNavigateToHome,
+                        label: {
+                            EmptyView()
+                        })
+                    .hidden()
+                    
+                    NavigationLink(
+                        destination: locationPicker(userName: $userName, year: $year, homeDone: $homeDone, officeDone: $officeDone, isHomeLocation: false),
+                        isActive: $viewModel.shouldNavigateToOffice,
                         label: {
                             EmptyView()
                         })

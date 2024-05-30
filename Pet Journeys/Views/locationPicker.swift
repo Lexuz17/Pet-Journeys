@@ -8,10 +8,11 @@
 import SwiftUI
 import MapKit
 
-struct LocationPickerHome: View {
+struct locationPicker: View {
     
     @EnvironmentObject var viewModel: MapPickerViewModel
     @EnvironmentObject var homeLocation: LocationModel
+    @EnvironmentObject var officeLocation: LocationModel
     
     @State var shouldPresentSheet = false
     @State var coordinate: CLLocationCoordinate2D? = nil
@@ -22,6 +23,8 @@ struct LocationPickerHome: View {
     @Binding var year: Int
     @Binding var homeDone: Bool
     @Binding var officeDone: Bool
+    
+    var isHomeLocation: Bool
     
     var body: some View {
         NavigationView {
@@ -48,12 +51,19 @@ struct LocationPickerHome: View {
                     Spacer()
                     
                     Button(action: {
-                        if let newCoordinate = viewModel.getTappedCoordinate() {
+                        let locationType = isHomeLocation ? "home" : "office"
+                        if let newCoordinate = viewModel.getTappedCoordinate(type: locationType) {
                             print(newCoordinate)
-                            homeLocation.latitude = newCoordinate.latitude
-                            homeLocation.longitude = newCoordinate.longitude
+                            if isHomeLocation {
+                                homeLocation.latitude = newCoordinate.latitude
+                                homeLocation.longitude = newCoordinate.longitude
+                                homeDone = true
+                            } else {
+                                officeLocation.latitude = newCoordinate.latitude
+                                officeLocation.longitude = newCoordinate.longitude
+                                officeDone = true
+                            }
                             shouldNavigateToNextPage = true
-                            homeDone = true
                         }
                     }) {
                         Text("Confirm")
@@ -65,8 +75,8 @@ struct LocationPickerHome: View {
                             .cornerRadius(10)
                     }
                     .padding(.bottom, 96)
-                    .disabled(viewModel.getTappedCoordinate() == nil)
-                    
+                    .disabled(viewModel.getTappedCoordinate(type: isHomeLocation ? "home" : "office") == nil)
+
                     NavigationLink(
                         destination: IntroView(userName: $userName, year: $year, homeDone: $homeDone, officeDone: $officeDone),
                         isActive: $shouldNavigateToNextPage,
@@ -101,12 +111,12 @@ struct LocationPickerHome: View {
             .sheet(isPresented: $shouldPresentSheet) {
                 print("Sheet dismissed!")
             } content: {
-                SheetView()
+                SheetView(locationType: isHomeLocation ? "home" : "office")
                     .presentationDetents([.medium, .large])
                     .presentationDragIndicator(.visible)
             }
             
-            MapPickerView(viewModel: viewModel)
+            MapPickerView(viewModel: viewModel, locationType: isHomeLocation ? "home" : "office")
                 .edgesIgnoringSafeArea(.all)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
         }

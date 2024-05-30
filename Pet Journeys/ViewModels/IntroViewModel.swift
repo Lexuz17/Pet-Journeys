@@ -20,4 +20,8 @@ class IntroViewModel: ObservableObject {
     func navigateToSetHome() {
         shouldNavigateToHome = true
     }
+    
+    func navigateToSetOffice() {
+        shouldNavigateToOffice = true
+    }
 }

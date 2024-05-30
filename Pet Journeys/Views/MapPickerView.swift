@@ -15,14 +15,16 @@ struct MapPickerView: View {
     let initialHeading = 0.0
     let initialPitch = 0.0
     
+    var locationType: String
+    
     var body: some View {
         MapReader { mapProxy in
             Map(position: $viewModel.mapCameraPosition, selection: $viewModel.selectedMapItem) {
                 UserAnnotation()
                 
                 // if the user has tapped on the map, show the location of the tap
-                if let coordinate = viewModel.tappedCoordinate {
-                    Marker("", systemImage: "house.fill", coordinate: coordinate)
+                if let coordinate = viewModel.getTappedCoordinate(type: locationType) {
+                    Marker("", systemImage: locationType == "home" ? "house.fill" : "briefcase.fill", coordinate: coordinate)
                         .tint(.red)
                 }
             }
@@ -36,7 +38,7 @@ struct MapPickerView: View {
             }
             .onTapGesture(coordinateSpace: .local) { location in
                 if let coordinate: CLLocationCoordinate2D = mapProxy.convert(location, from: .local) {
-                    viewModel.findClosest(to: coordinate)
+                    viewModel.markCoordinate(to: coordinate, type: locationType)
                 }
             }
             .overlay(
